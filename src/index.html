@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me ajuda!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/output.css">
+    <link href="img/calendario.png" rel="shortcut icon" type="media/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-sky-300 shadow-sm top-0 z-50 sticky">
+    <div class="bg-sky-300 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+                <h1 class="text-4xl md:text-6xl text-white" style="font-family: 'Modak', system-ui;">Me ajuda!</h1>
+                <p class="text-white text-sm md:text-xm" style="font-family: 'Outfit',sans-serif;">Monte meu plano de estudos!</p>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 flex-wrap">
+                <a href="#" class="text-white text-lg font-semibold hover:text-lime-200 hover:-translate-y-1 transition duration-300">Início</a>
+                <a href="#" class="text-white text-lg font-semibold hover:text-lime-200 hover:-translate-y-1 transition duration-300">Saiba mais</a>
+                <a href="#" class="text-white text-lg font-semibold hover:text-lime-200 hover:-translate-y-1 transition duration-300">Sobre</a>
+                <button class="bg-lime-300 hover:bg-sky-300 hover:scale-105 transition duration-300 text-white text-lg font-semibold px-7 py-3 rounded-full shadow-lg">Entrar</button>
+            </nav>
+            <!-- botão menu celular -->
+            <button class="md:hidden">
+                <img src="img/traço.png" alt="Menu" class="w-10 h-10">
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <section>
+            <div class="bg-white shadow-sky-200 shadow-lg rounded-bom p-8 mb-10 mt-7 ml-14 mr-14">
+                <h2 class="block w-96 mx-auto text-2xl font-bold text-sky-700 text-center mb-2 bg-sky-100 rounded-full p-2" style="font-family: 'Outfit',sans-serif;">Vamos Planejar seus Estudos!</h2>
+                <p class="text-sky-700 text-lg font-semibold mb-6 text-center" style="font-family: 'Outfit',sans-serif;">Responda algumas perguntas simples para receber um plano personalizado</p>
+                <form class="space-y-8">
+                    <div class="space-y-3">
+                        <label class="block text-lg font-semibold text-sky-700 bg-sky-100 p-3 rounded-full" style="font-family: 'Outfit',sans-serif;">
+                                1. Qual é o nível de dificuldade na matéria?
+                        </label>
+                            <div class="flex gap-3 flex-wrap">
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="dificuldade" value="1" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium" style="font-family: 'Outfit',sans-serif;">Muito fácil</span>
+                                </label>
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="dificuldade" value="2" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium" style="font-family: 'Outfit',sans-serif;">Fácil</span>
+                                </label>
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="dificuldade" value="3" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium" style="font-family: 'Outfit',sans-serif;">Médio</span>
+                                </label>
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="dificuldade" value="4" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium" style="font-family: 'Outfit',sans-serif;">Difícil</span>
+                                </label>
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="dificuldade" value="5" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium" style="font-family: 'Outfit',sans-serif;">Muito Difícil</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="block text-lg font-semibold text-sky-700 bg-sky-100 p-3 rounded-full" style="font-family: 'Outfit',sans-serif;">
+                                2. Qual é o seu nível de conhecimento sobre o assunto?
+                            </label>
+                            <div class="flex gap-3 flex-wrap">
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="conhecimento" value="1" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium">Nenhum</span>
+                                </label>
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="conhecimento" value="2" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium">Básico</span>
+                                </label>
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="conhecimento" value="3" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium">Intermediário</span>
+                                </label>
+                                <label class="flex-1 flex items-center gap-3 cursor-pointer p-3 border-2 border-lime-200 rounded-2xl hover:border-lime-400 hover:bg-lime-50 transition">
+                                    <input type="radio" name="conhecimento" value="4" class="w-4 h-4">
+                                    <span class="text-sky-600 font-medium">Avançado</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <label class="block text-lg font-semibold text-sky-700 bg-sky-100 p-3 rounded-full" style="font-family: 'Outfit',sans-serif;">
+                                3. Quantos dias faltam para a avaliação/trabalho?
+                            </label>
+                            <div class="flex items-center gap-4">
+                                <input type="number" name="dias" placeholder="Ex: 15" min="1" required class="w-40 px-4 py-3 border-2 border-lime-200 rounded-2xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+                                <span class="text-sky-600 font-medium" style="font-family: 'Outfit', sans-serif;">dias</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="block text-lg font-semibold text-sky-700 bg-sky-100 p-3 rounded-full" style="font-family: 'Outfit',sans-serif;">
+                                4. Quantas horas você tem disponível por dia para estudar?
+                            </label>
+                            <div class="flex items-center gap-4">
+                                <input type="number" name="horas" placeholder="Ex: 3" min="1" max="24" required class="w-40 px-4 py-3 border-2 border-lime-200 rounded-2xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+                                <span class="text-sky-600 font-medium" style="font-family: 'Outfit', sans-serif;">horas</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="block text-lg font-semibold text-sky-700 bg-sky-100 p-3 rounded-full" style="font-family: 'Outfit',sans-serif;">
+                                5. Quantos assuntos distintos você busca aprender?
+                            </label>
+                            <div class="flex items-center gap-4">
+                                <input type="number" name="assuntos" placeholder="Ex: 5" min="1"  required class="w-40 px-4 py-3 border-2 border-lime-200 rounded-2xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+                                <span class="text-sky-600 font-medium" style="font-family: 'Outfit', sans-serif;">assuntos</span>
+                            </div>
+                        </div>
+                        <!-- Botão Enviar -->
+                        <button type="submit" class="w-78 mx-auto block bg-lime-400 text-white font-semibold py-3 rounded-bom hover:shadow-lg hover:bg-sky-300 transition-all duration-300 transform hover:scale-105" style="font-family: 'Outfit',sans-serif;">
+                            Gerar Meu Plano de Estudos
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div class="bg-white rounded-bom shadow-lg p-8 mr-14 ml-14 mb-8 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl">
+                    <h4 class="text-2xl text-sky-700 font-bold block w-96 text-center mb-5 bg-sky-100 rounded-full p-2" style="font-family: 'Outfit', sans-serif;">Seu percentual de preparação</h4>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <h3 class="text-lg font-semibold text-sky-700" style="font-family: 'Outfit', sans-serif;">O quão preparado você irá ficar?</h3>
+                            <p class="text-4xl font-bold text-sky-600">78%</p>
+                        </div>
+                        <div class="w-full bg-sky-100 rounded-full h-5 overflow-hidden">
+                            <div class="bg-lime-300 h-full rounded-full" style="width: 78%;"></div>
+                        </div>
+                        <p class="text-sky-700 text-sm mt-4" style="font-family: 'Outfit',sans-serif;">Você estará bem preparado! Com o plano abaixo, você alcançará uma preparação suficiente até o dia da avaliação</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bg-sky-100 rounded-bom p-8 mb-9 ml-12 mr-12">
+                    <h3 class="mb-4 w-72 rounded-bom text-center p-3 bg-white text-2xl font-bold text-sky-700 mx-auto" style="font-family: 'Outfit', sans-serif;">Calendário de Estudos</h3>
+                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+                        <div class="relative bg-white rounded-2xl p-5 mb-2 mt-2 w-full border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-lime-100 border-2 border-lime-400 flex items-center justify-center text-lime-500 font-bold
+                                    transition duration-300 hover:scale-110 active:scale-95 hover:bg-lime-400 hover:text-white">✓</button>
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Dia 01</p>
+                                    <h4 class="text-2xl font-bold text-sky-700" style="font-family: 'Outfit',sans-serif;">Segunda</h4>
+                                </div>
+                            </div>
+                            <p class="bg-lime-100 text-lime-500 text-sm px-3 py-1 rounded-full" style="font-family: 'Outfit',sans-serif;">3h de estudo</p>
+                            <div class="border-t my-3"></div> <!--linha separadora-->
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Introdução e Conceitos Gerais</p>
+                        </div>
+
+                        <div class="relative bg-white rounded-2xl p-5 mb-2 my-2 w-full border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-lime-100 border-2 border-lime-400 flex items-center justify-center text-lime-500 font-bold
+                                    transition duration-300 hover:scale-110 active:scale-95 hover:bg-lime-400 hover:text-white">✓</button>
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Dia 02</p>
+                                    <h4 class="text-2xl font-bold text-sky-700" style="font-family: 'Outfit',sans-serif;">Terça</h4>
+                                </div>
+                            </div>
+                            <p class="bg-lime-100 text-lime-500 text-sm px-3 py-1 rounded-full" style="font-family: 'Outfit',sans-serif;">3h de estudo</p>
+                            <div class="border-t my-3"></div>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Desenvolvimento e Resumo</p>
+                        </div>
+                        <div class="relative bg-white rounded-2xl p-5 mb-2 my-2 w-full border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-lime-100 border-2 border-lime-400 flex items-center justify-center text-lime-500 font-bold
+                                    transition duration-300 hover:scale-110 active:scale-95 hover:bg-lime-400 hover:text-white">✓</button>
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Dia 03</p>
+                                    <h4 class="text-2xl font-bold text-sky-700" style="font-family: 'Outfit',sans-serif;">Quarta</h4>
+                                </div>
+                            </div>
+                            <p class="bg-lime-100 text-lime-500 text-sm px-3 py-1 rounded-full" style="font-family: 'Outfit',sans-serif;">3h de estudo</span>
+                            <div class="border-t my-3"></div>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Exercício</p>
+                        </div>
+                        <div class="relative bg-white rounded-2xl p-5 mb-2 my-2 w-full border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-lime-100 border-2 border-lime-400 flex items-center justify-center text-lime-500 font-bold
+                                    transition duration-300 hover:scale-110 active:scale-95 hover:bg-lime-400 hover:text-white">✓</button>
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Dia 04</p>
+                                    <h4 class="text-2xl font-bold text-sky-700" style="font-family: 'Outfit',sans-serif;">Quinta</h4>
+                                </div>
+                            </div>
+                            <p class="bg-lime-100 text-lime-500 text-sm px-3 py-1 rounded-full" style="font-family: 'Outfit',sans-serif;">3h de estudo</p>
+                            <div class="border-t my-3"></div>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Exercício</p>
+                        </div>
+                        <div class="relative bg-white rounded-2xl p-5 mb-2 my-2 w-full border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-lime-100 border-2 border-lime-400 flex items-center justify-center text-lime-500 font-bold
+                                    transition duration-300 hover:scale-110 active:scale-95 hover:bg-lime-400 hover:text-white">✓</button>
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Dia 05</p>
+                                    <h4 class="text-2xl font-bold text-sky-700" style="font-family: 'Outfit',sans-serif;">Sexta</h4>
+                                </div>
+                            </div>
+                            <p class="bg-lime-100 text-lime-500 text-sm px-3 py-1 rounded-full" style="font-family: 'Outfit',sans-serif;">3h de estudo</p>
+                            <div class="border-t my-3"></div>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Revisão e Simulado</p>
+                        </div>
+                        <div class="relative bg-white rounded-2xl p-5 mb-2 my-2 w-full border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-lime-100 border-2 border-lime-400 flex items-center justify-center text-lime-500 font-bold
+                                    transition duration-300 hover:scale-110 active:scale-95 hover:bg-lime-400 hover:text-white">✓</button>
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Dia 06</p>
+                                    <h4 class="text-2xl font-bold text-sky-700" style="font-family: 'Outfit',sans-serif;">Sábado</h4>
+                                </div>
+                            </div>
+                            <p class="bg-lime-100 text-lime-500 text-sm px-3 py-1 rounded-full" style="font-family: 'Outfit',sans-serif;">3h de estudo</p>
+                            <div class="border-t my-3"></div>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Dúvida e Reforço</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bg-sky-100 rounded-bom p-8 mb-8 ml-12 mr-12">
+                    <h3 class="w-72 rounded-bom text-center p-3 bg-white text-2xl font-bold text-sky-700 mb-6 mx-auto" style="font-family: 'Outfit', sans-serif;">Entenda seus Estudos</h3>
+                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-sky-50 p-5 rounded-bom border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <div class="flex items-center gap-3 mb-3">
+                                <p class="font-bold text-sky-700 text-lg bg-sky-100 px-3 py-2 rounded-bom" style="font-family: 'Outfit',sans-serif;">Revisão</p>
+                            </div>
+                            <p class="text-sky-700 mb-3" style="font-family: 'Outfit',sans-serif;">Tempo recomendado: <span class="font-bold text-lime-500" style="font-family: 'Outfit',sans-serif;">1 hora</span></p>
+                            <ul>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-2 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit',sans-serif;">✓ Releia os conteúdos</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit',sans-serif;">✓ Reveja anotações</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit',sans-serif;">✓ Crie mapas mentais</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit',sans-serif;">✓ Relembre conceitos-chave</li>
+                            </ul>
+                        </div>
+                        <div class="bg-sky-50 p-5 rounded-bom border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <div class="flex items-center gap-3 mb-3">
+                                <p class="font-bold text-sky-800 text-lg bg-sky-100 px-3 py-2 rounded-full" style="font-family: 'Outfit',sans-serif;">Exercício</p>
+                            </div>
+                            <p class="text-sky-700 mb-3" style="font-family: 'Outfit',sans-serif;">Tempo recomendado: <span class="font-bold text-lime-500" style="font-family: 'Outfit',sans-serif;">2 horas</span></p>
+                            <ul>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-2 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Refaça exercícios</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Anote dúvidas</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Aumente o nível aos poucos</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Revise questões erradas</li>
+                            </ul>
+                        </div>
+                        <div class="bg-sky-50 p-5 rounded-bom border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <div class="flex items-center gap-3 mb-3">
+                                <p class="font-bold text-sky-700 text-lg bg-sky-100 px-3 py-2 rounded-full" style="font-family: 'Outfit',sans-serif;">Resumo</p>
+                            </div>
+                            <p class="text-sky-700 mb-3" style="font-family: 'Outfit',sans-serif;">Tempo recomendado: <span class="font-bold text-lime-500" style="font-family: 'Outfit',sans-serif;">1 hora</span></p>
+                            <ul>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-2 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Seja conciso</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Faça anotações resumidas</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Crie mapas mentais</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Foque nas dificuldades</li>
+                            </ul>
+                        </div>
+                        <div class="bg-sky-50 p-5 rounded-bom border-l-4 border-lime-400 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                            <div class="flex items-center gap-3 mb-3">
+                                <p class="font-bold text-sky-700 text-lg bg-sky-100 px-3 py-2 rounded-full" style="font-family: 'Outfit',sans-serif;">Simulado</p>
+                            </div>
+                            <p class="text-sky-700 mb-3" style="font-family: 'Outfit',sans-serif;">Tempo recomendado: <span class="font-bold text-lime-500" style="font-family: 'Outfit',sans-serif;">2 horas</span></p>
+                            <ul>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-2 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Teste seus conhecimentos</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Pratique</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Descubra pontos fortes/fracos</li>
+                                <li class="bg-white p-1.5 mb-1.5 rounded-xl flex items-center gap-3 text-sky-700 hover:bg-sky-200" style="font-family: 'Outfit', sans-serif;">✓ Revise</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="bg-white p-6 mb-12 ml-12 mr-12 border-dica border-lime-200 rounded-bom">
+                    <h3 class="text-3xl font-bold text-lime-500 p-6 mb-6" style="font-family: 'Outfit', sans-serif;">Dicas Gerais de Estudo</h3>
+                    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit',sans-serif;">Foco e Concentração</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif;">Estude em um local calmo e sem distrações. Desligue o celular ou use aplicativos de bloqueio de sites.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit',sans-serif;">Técnica Pomodoro</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit', sans-serif;">Estude 25/50 minutos, descanse 5/10 minutos. A cada 4 ciclos, faça um descanso maior de 15/30 minutos.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit', sans-serif;">Aprendizado Ativo</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif">Faça perguntas, crie resumos e ensine o conteúdo para alguém.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit',sans-serif">Descanso e Sono</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif">Durma bem! O sono é essencial para consolidar a memória. Procure dormir 7-8 horas por noite.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit',sans-serif">Estude em Grupo</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif">Discutir com colegas ajuda a consolidar conhecimento e resolver dúvidas de forma colaborativa.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit',sans-serif">Exercício Físico</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif">Atividades físicas melhoram a concentração e reduzem o estresse.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit',sans-serif">Faça Anotação</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif">Escrever à mão ajuda a memorizar melhor. Use cores e destaque os pontos principais.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit',sans-serif">Revise Regularmente</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif">Não deixe para revisar tudo na última hora. Revise o conteúdo regularmente para melhor retenção.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-3xl border-dica border-lime-200">
+                            <p class="font-bold text-sky-700 mb-2" style="font-family: 'Outfit',sans-serif">Conheça Você Mesmo</p>
+                            <p class="text-sm text-sky-700" style="font-family: 'Outfit',sans-serif">Saiba sua melhor forma de aprendizado e reconheça suas falhas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</main>
+<footer class="bg-sky-800 text-white mt-16">
+    <div class="mx-auto px-8 sm:px-6 lg:px-12 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8 mb-8">
+            <div>
+                <h4 class="text-5xl font-family text-white mb-4" style="font-family: 'Modak', system-ui;">Me ajuda!</h4>
+                    <p class="text-sm" style="font-family: 'Outfit',sans-serif;">Monte meu plano de estudos!</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-lime-300 mb-4" style="font-family: 'Outfit', sans-serif;">Discentes</h5>
+                    <ul class="text-sm">
+                        <li><a href="#" class="hover:text-lime-300 transition" style="font-family: 'Outfit',sans-serif;">Natalia Oliveira</a></li>
+                        <li><a href="#" class="hover:text-lime-300 transition" style="font-family: 'Outfit', sans-serif;">Fernanda Santos</a></li>
+                    </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-lime-300 mb-4" style="font-family: 'Outfit',sans-serif;">Docente</h5>
+                    <ul class="text-sm">
+                        <li><a href="#" class="hover:text-lime-300 transition" style="font-family: 'Outfit', sans-serif;">Fabrício Herpich</a></li>
+                    </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-lime-300 mb-4" style="font-family: 'Outfit',sans-serif;">Referências</h5>
+                    <ul class="text-sm">
+                        <li><a href="https://univs.edu.br/blog/como-estudar/" class="hover:text-lime-300 transition" style="font-family: 'Outfit', sans-serif;">UniVS</a></li>
+                    </ul>
+                    <ul class="text-sm">
+                        <li><a href="https://brasilescola.uol.com.br/dicas-de-estudo/10-dicas-para-melhorar-concentracao-nos-estudos.htm" class="hover:text-lime-300 transition" style="font-family: 'Outfit', sans-serif;">BrasilEscola</a></li>
+                    </ul>
+                    <ul class="text-sm">
+                        <li><a href="https://www.ubes.org.br/2024/10-dicas-para-melhorar-a-concentracao-nos-estudos/" class="hover:text-lime-300 transition" style="font-family: 'Outfit', sans-serif;">Ubes</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="border-t border-lime-300 pt-8 flex justify-center">
+            <p class="text-center text-sm text-lime-300">Me ajuda! - Monte meu plano de estudos!</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

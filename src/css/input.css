@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.rounded-bom {
+    border-radius: 35px;
+}
+
+.border-dica{
+    border-width: 3px;
+}
